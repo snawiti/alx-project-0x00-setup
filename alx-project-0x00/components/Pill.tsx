@@ -1,8 +1,8 @@
-const Pill: React.FC = () => {
+const Pill = ({ title }: { title: string }) => {
   return (
-    <div className=" flex justify-center  items-center bg-[#F9F9F9] px-3 w-auto h-[27px] rounded-full">
-      <p className=" text-sm ">Title</p>
-    </div>
+    <span className="px-3 py-1 bg-blue-200 text-blue-900 rounded-full text-sm mr-2">
+      {title}
+    </span>
   )
 }
 
